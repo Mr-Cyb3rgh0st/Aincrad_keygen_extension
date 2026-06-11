@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aincrad KeyGen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <!-- App Bar -->
+    <div class="app-bar">
+        <button id="menuOpenBtn" class="menu-btn">☰</button>
+        <div class="app-title">AINCRAD KEYGEN</div>
+    </div>
+
+    <!-- Drawer Overlay -->
+    <div id="drawerOverlay" class="drawer-overlay"></div>
+
+    <!-- Side Drawer -->
+    <div id="drawer" class="drawer">
+        <div class="drawer-header">
+            <h2>SYSTEM MENU</h2>
+            <button id="menuCloseBtn" class="close-btn">✕</button>
+        </div>
+        <nav class="drawer-nav">
+            <button class="nav-btn active" data-tab="tab-injector">> INJECTOR</button>
+            <button class="nav-btn" data-tab="tab-license">> ABOUT</button>
+        </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-area">
+        <!-- Update Screen -->
+        <div id="screenUpdate" class="screen">
+            <div class="cyber-panel cyber-panel-danger">
+                <div class="scan-line scan-line-danger"></div>
+                <h2 class="title title-danger">UPDATE REQUIRED</h2>
+                <p class="subtitle">A new version is available. Please update the extension.</p>
+                <button id="updateBtn" class="btn btn-danger">UPDATE NOW</button>
+            </div>
+        </div>
+
+        <!-- Injector Tab -->
+        <div id="tab-injector" class="tab-content active">
+            <!-- Login Screen -->
+            <div id="screenLogin" class="screen active">
+                <div class="cyber-panel">
+                    <div class="scan-line"></div>
+                    <div class="avatar-container">
+                        <img src="images/avatar.jpg" alt="Avatar">
+                    </div>
+                    <h1 class="title">AINCRAD KEYGEN ACCESS</h1>
+                    <p class="subtitle">Enter secure authentication key...</p>
+                    <input type="password" id="keyInput" class="input-field" placeholder="ENTER PASSWORD">
+                    <div id="loginError" class="error-msg"></div>
+                    <button id="authBtn" class="btn btn-primary">AUTHENTICATE</button>
+                    <div class="terminal-box">
+                        > STATUS : LOCKED<br>
+                        > FIREWALL : ACTIVE<br>
+                        > SYSTEM : AINCRAD KEYGEN<br>
+                        > ACCESS : RESTRICTED
+                    </div>
+                    <div class="footer-text">MR CYB3RGH0$T SECURE GATEWAY</div>
+                </div>
+            </div>
+
+            <!-- Wrong Site Screen -->
+            <div id="screenWrongSite" class="screen">
+                <div class="cyber-panel cyber-panel-danger">
+                    <div class="scan-line scan-line-danger"></div>
+                    <h1 class="title title-danger">ACCESS DENIED</h1>
+                    <p class="subtitle">Unsupported target detected.<br>Allowed domains only.</p>
+                    <div class="terminal-box terminal-box-danger">
+                        > aincradmods.com<br>
+                        > tarviral.com<br>
+                        > rodaemotor.com
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ready Screen -->
+            <div id="screenReady" class="screen">
+                <div class="cyber-panel">
+                    <div class="scan-line"></div>
+                    <div class="avatar-container">
+                        <img src="images/avatar.jpg" alt="Avatar">
+                    </div>
+                    <h1 class="title">TARGET LOCKED</h1>
+                    <p class="subtitle">Ready to inject payload into target site.</p>
+                    <button id="startTimerBtn" class="btn btn-success">INITIALIZE TUNNEL</button>
+                    <button id="clearCookiesBtn" class="btn btn-clear-cookies">⟳ CLEAR COOKIES & RETRY</button>
+                    <div id="clearCookiesFeedback" class="copy-feedback"></div>
+                    <div class="terminal-box">
+                        > STATUS : READY<br>
+                        > TARGET : VERIFIED<br>
+                        > PAYLOAD : STANDBY
+                    </div>
+                    <div class="footer-text">MR CYB3RGH0$T SECURE GATEWAY</div>
+                </div>
+            </div>
+
+            <!-- Timer Screen -->
+            <div id="screenTimer" class="screen">
+                <div class="cyber-panel">
+                    <div class="scan-line"></div>
+                    <div class="avatar-container">
+                        <img src="images/avatar.jpg" alt="Avatar">
+                    </div>
+                    <h1 class="title">MISSILE LAUNCHING</h1>
+                    <div id="timerDisplay" class="timer-display">30</div>
+                    <p class="subtitle">Initializing encrypted tunnel...<br>Verifying secure session...</p>
+                    <div class="terminal-box">
+                        > STATUS : CONNECTED<br>
+                        > Captcha : BYPASSED<br>
+                        > Developer : Mr.Cyb3rgh0$t<br>
+                        > Telegram : @MrCyb3rgh0st
+                    </div>
+                    <div class="footer-text">MR CYB3RGH0$T SECURE GATEWAY</div>
+                </div>
+            </div>
+
+            <!-- Inject Screen -->
+            <div id="screenInject" class="screen">
+                <div class="cyber-panel">
+                    <div class="scan-line"></div>
+                    <h1 class="title">INJECTION READY</h1>
+                    <p class="subtitle">Secure session verified. Ready for execution.</p>
+                    <button id="injectBtn" class="btn btn-danger">EXECUTE OVERRIDE</button>
+                </div>
+            </div>
+
+            <!-- Key Secured Screen -->
+            <div id="screenKeySecured" class="screen">
+                <div class="cyber-panel">
+                    <div class="scan-line"></div>
+                    <div class="key-secured-icon">🔑</div>
+                    <h1 class="title title-success">PAYLOAD SECURED</h1>
+                    <p class="subtitle">Your override key has been extracted successfully.</p>
+                    <div id="keyDisplayBox" class="key-display-box">AINCRAD-XXXX-XXXX</div>
+                    <button id="copyKeyBtn" class="btn btn-copy">
+                        <span class="copy-icon">⎘</span> COPY KEY
+                    </button>
+                    <div id="copyFeedback" class="copy-feedback"></div>
+                    <div class="terminal-box" style="margin-top:12px;">
+                        > STATUS : KEY EXTRACTED<br>
+                        > PAYLOAD : SECURED<br>
+                        > SYSTEM : AINCRAD KEYGEN
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- License Tab -->
+        <div id="tab-license" class="tab-content">
+            <h2 style="color:#00ffff; text-shadow:0 0 10px #00ffff; margin-bottom:10px;">ABOUT</h2>
+            <div class="info-card">
+                <p><strong>AINCRAD KEYGEN v1.0</strong></p>
+                <p style="color:#7f9aa5; margin-top:5px; margin-bottom:10px;">Smart Aincrad CF Bypass & JS Injector</p>
+                <p>Developer: Mr Cyb3rgh0$t</p>
+            </div>
+            <div class="info-card">
+                <p><strong>SUPPORT & CONTACT</strong></p>
+                <a href="https://t.me/MrCyb3rgh0st" target="_blank" class="btn btn-primary" style="display: block; text-align: center; color: #000000; text-decoration: none; box-sizing: border-box; margin-top: 10px;">CONTACT US ON TELEGRAM</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/popup.js"></script>
+</body>
+</html>
