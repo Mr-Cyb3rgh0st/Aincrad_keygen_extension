@@ -1,0 +1,4 @@
+backup_src/
+.git/
+node_modules/
+*.log
